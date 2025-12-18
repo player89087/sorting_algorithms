@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 nums = []
 duration = []
 size = []
-for y in range(0,10000):
+for y in range(0,10000): # change here how many you want to sort
     
+
     nums.append(random.randint(1,y+1)) 
     start = time.time()
     for i in range(0,len(nums)):
