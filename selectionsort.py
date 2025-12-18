@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 
 
 nums = []
-
-for y in range(0,100000):
+duration = []
+size = []
+for y in range(0,10000):
+    
     nums.append(random.randint(1,y+1)) 
     start = time.time()
     for i in range(0,len(nums)):
@@ -18,7 +20,10 @@ for y in range(0,100000):
                 nums[i], nums[index] = nums[index], nums[i] # check element gets changed with first unsorted element
     end = time.time()
     dur = end - start
-    plt.plot(dur,y+1)
+    duration.append(dur)
+    size.append(y+1)
+
+plt.plot(size,duration)
 
 plt.show()
     
