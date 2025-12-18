@@ -9,7 +9,7 @@ size = []
 for y in range(0,10000): # change here how many you want to sort
     
 
-    nums.append(random.randint(1,y+1)) 
+    nums.append(random.randint(1,100)) 
     start = time.time()
     for i in range(0,len(nums)):
         check_element = nums[i]
